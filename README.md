@@ -4,7 +4,7 @@ A collection of examples for common features that you may want to implement in y
 ## Examples
 
 ### random-number-generator
-Description: A Python Eel random number application using Python and JS.
+Description: A Python Eel random number application using Python and JavaScript.
 
 <img src="https://i.imgur.com/ej8LXNj.png" width="300" height="300">
 
@@ -14,6 +14,6 @@ Description: A Python Eel greetings application using Python and HTML.
 <img src="https://i.imgur.com/78NW0Od.png" width="300" height="300">
 
 ### arithmetic-operations
-Description: A Python Eel arithmetic operations
+Description: A Python Eel arithmetic operations application using Python and JavaScript.
 
 <img src="https://i.imgur.com/YOxOnVI.png" width="300" height="300">

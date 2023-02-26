@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>My App</title>
+    <script type="text/javascript" src="/eel.js"></script>
+    <script type="text/javascript">
+        async function greet() {
+            const name = document.getElementById('name').value;
+            const greeting = await eel.greet(name)();
+            document.getElementById('greeting').innerText = greeting;
+        }
+    </script>
+    <style>
+        body {
+            font-family: sans-serif;
+            text-align: center;
+        }
+        input[type=text] {
+            margin-top: 20px;
+            padding: 10px;
+            font-size: 16px;
+        }
+        button {
+            margin-top: 10px;
+            padding: 10px;
+            font-size: 16px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            /* Outline the button on hover */
+            outline: 1px solid #4CAF50;
+            /* Highlight the button on hover */
+            background-color: #4CAF50;
+        }
+    </style>
+</head>
+<body>
+    <h1>My App</h1>
+    <!-- Also call greet() when enter is pressed -->
+    <input type="text" id="name" placeholder="Enter your name" onkeyup="if (event.keyCode === 13) greet()">
+    <br>
+    <!-- Call greet() when greet button is pressed -->
+    <button onclick="greet()">Greet</button>
+    <p id="greeting"></p>
+</body>
+</html>

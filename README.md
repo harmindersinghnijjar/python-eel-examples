@@ -4,12 +4,12 @@ A collection of examples for common features that you may want to implement in y
 ## Examples
 
 ### Random-number-generator app
-Description: An Python Eel random number application using Python and JS.
+Description: A Python Eel random number application using Python and JS.
 
 <img src="https://i.imgur.com/ej8LXNj.png" width="300" height="300">
 
 ### Greetings
-Description: An Python Eel greetings application using Python and HTML.
+Description: A Python Eel greetings application using Python and HTML.
 
 <img src="https://i.imgur.com/78NW0Od.png" width="300" height="300">
 

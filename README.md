@@ -18,6 +18,11 @@ Description: A Python Eel greetings application using Python and HTML.
 
 <img src="https://i.imgur.com/78NW0Od.png" width="300" height="300">
 
+### hello-world
+Description: A Python Eel hello world application using Python and JavaScript.
+
+<img src="https://i.imgur.com/CiCvpXq.png" width="300" height="300">
+
 ### random-number-generator
 Description: A Python Eel random number application using Python and JavaScript.
 

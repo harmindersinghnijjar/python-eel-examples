@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Current Time</title>
+</head>
+<body>
+    <h1 id="current-time"></h1>
+
+    <script type="text/javascript" src="/eel.js"></script>
+    <script type="text/javascript">
+        function updateCurrentTime() {
+            eel.get_current_time()(setCurrentTime);
+        }
+
+        function setCurrentTime(currentTime) {
+            document.getElementById("current-time").innerHTML = currentTime;
+        }
+
+        setInterval(updateCurrentTime, 1000);
+    </script>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>RuneScape Hiscores</title>
+</head>
+<body>
+    <h1>RuneScape Hiscores</h1>
+
+    <form onsubmit="getStats(); return false;">
+        <input type="text" id="input-username" placeholder="Enter your username">
+        <button type="submit">Get stats</button>
+    </form>
+
+    <div id="stats"></div>
+
+    <script type="text/javascript" src="/eel.js"></script>
+    <script type="text/javascript">
+        // Create a list of all skillnames for the first column of the table
+        var skillNames = ["Overall", "Attack", "Defence", "Strength", "Hitpoints", "Ranged", "Prayer", "Magic", "Cooking", "Woodcutting", "Fletching", "Fishing", "Firemaking", "Crafting", "Smithing", "Mining", "Herblore", "Agility", "Thieving", "Slayer", "Farming", "Runecrafting", "Hunter", "Construction", "--", "Bounty Hunter - Hunter", "Bounty Hunter - Rogue", "Clue Scrolls (all)", "Clue Scrolls (beginner)", "Clue Scrolls (easy)", "Clue Scrolls (medium)", "Clue Scrolls (hard)", "Clue Scrolls (elite)", "Clue Scrolls (master)", "LMS - Rank", "PVP Arena - Rank","Soul Wars Zeal", "Rifts closed","Abyssal Sire", "Alchemical Hydra", "Barrows Chests", "Bryophyta", "Callisto", "Cerberus", "Chambers of Xeric", "Chambers of Xeric: Challenge Mode", "Chaos Elemental", "Chaos Fanatic", "Commander Zilyana", "Corporeal Beast", "Crazy Archaeologist", "Dagannoth Prime", "Dagannoth Rex", "Dagannoth Supreme", "Deranged Archaeologist", "General Graardor", "Giant Mole", "Grotesque Guardians", "Hespori", "Kalphite Queen", "King Black Dragon", "Kraken", "Kree'arra", "K'ril Tsutsaroth", "Mimic", "Nex", "Nightmare", "Phosani's Nightmare", "Obor", "Phantom Muspah", "Sarachnis", "Scorpia", "Skotizo", "Tempoross", "The Gauntlet", "The Corrupted Gauntlet", "Theatre of Blood", " Theatre of Blood: Hard Mode", "Thermonuclear Smoke Devil","Tombs of Amascut", "Tombs of Amascut: Expert Mode", "TzKal-Zuk", "TzTok-Jad", "Venenatis", "Vet'ion", "Vorkath", "Wintertodt", "Zalcano", "Zulrah"];
+
+       function updateStats(stats) {
+            var statsDiv = document.getElementById("stats");
+            statsDiv.innerHTML = "";
+
+            // Loop through stats and display all 3 columns of each skill
+            for (var i = 0; i < stats.length; i++) {
+                var stat = stats[i].split(",");
+                var statName = stat[0].replace("_", " ");
+                var statRank = stat[0];
+                var statLevel = stat[1];
+                var statExperience = stat[2];
+
+                var statElement = document.createElement("p");
+                statElement.innerHTML = `${skillNames[i]}: ${statRank} | ${statLevel} | ${statExperience}`;
+                statsDiv.appendChild(statElement);
+            }
+
+        }
+
+        function getStats() {
+            var username = document.getElementById("input-username").value;
+            eel.get_player_stats(username)(updateStats);
+        }
+    </script>
+</body>
+</html>

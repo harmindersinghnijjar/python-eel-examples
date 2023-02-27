@@ -1,0 +1,26 @@
+import eel
+import requests
+
+# Set web files folder as web interface
+eel.init('web')
+
+# Define a function to get a player's stats from the RuneScape API
+@eel.expose
+def get_player_stats(username):
+    url = f"https://secure.runescape.com/m=hiscore_oldschool/index_lite.ws?player={username}"
+    response = requests.get(url)
+
+    if response.status_code == 200:
+        stats = response.text.splitlines()
+        print(stats)
+        return stats
+    else:
+        return "Error: Unable to get player stats"
+
+# Define a function to start the Eel app
+def start_app():
+    eel.start('index.html', size=(500, 400))
+
+# Start the Eel app
+if __name__ == '__main__':
+    start_app()

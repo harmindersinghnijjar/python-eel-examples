@@ -14,6 +14,11 @@ Description: A Python Eel greetings application using Python and HTML.
 <img src="https://i.imgur.com/78NW0Od.png" width="300" height="300">
 
 ### arithmetic-operations
-Description: A Python Eel arithmetic operations application using Python and JavaScript.
+Description: A Python Eel arithmetic operations application using Python, HTML and JavaScript.
 
 <img src="https://i.imgur.com/YOxOnVI.png" width="300" height="300">
+
+### current time
+Description: A Python Eel application to display current time using Python, HTML, and JavaScript.
+
+<img src="https://i.imgur.com/Ojh6ZG8.png" width="300" height="300">

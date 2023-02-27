@@ -23,6 +23,11 @@ Description: A Python Eel hello world application using Python and JavaScript.
 
 <img src="https://i.imgur.com/CiCvpXq.png" width="300" height="300">
 
+### hello-world
+Description: A Python Eel OSRS hiscores application using Python and JavaScript.
+
+<img src="https://i.imgur.com/5MOGOba.png" width="300" height="300">
+
 ### random-number-generator
 Description: A Python Eel random number application using Python and JavaScript.
 

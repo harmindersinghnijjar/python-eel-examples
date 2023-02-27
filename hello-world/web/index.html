@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Hello, World!</title>
+</head>
+<body>
+    <h1 id="greeting"></h1>
+
+    <form onsubmit="sendData(); return false;">
+        <input type="text" id="input-data" placeholder="Enter your name">
+        <button type="submit">Send data from JavaScript to Python</button>
+    </form>
+
+    <script type="text/javascript" src="/eel.js"></script>
+    <script type="text/javascript">
+        function updateGreeting(greeting) {
+            document.getElementById("greeting").innerHTML = greeting;
+        }
+
+        function sendData() {
+            var data = document.getElementById("input-data").value;
+            eel.send_data_from_js(data)(updateGreeting);
+        }
+
+        eel.send_data_from_python("World!")(updateGreeting);
+    </script>
+</body>
+</html>

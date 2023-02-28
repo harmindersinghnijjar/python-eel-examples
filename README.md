@@ -8,10 +8,17 @@ Description: A Python Eel arithmetic operations application using Python, HTML a
 
 <img src="https://i.imgur.com/YOxOnVI.png" width="300" height="300">
 
-### current time
+### current-time
 Description: A Python Eel application to display current time using Python, HTML, and JavaScript.
 
 <img src="https://i.imgur.com/Ojh6ZG8.png" width="300" height="300">
+
+
+### dark-theme
+Description: A Python Eel dark mode application using Python and JavaScript.
+
+<img src="https://i.imgur.com/APuY5ei.png" width="300" height="300">
+<img src="https://i.imgur.com/1CFVC6Z.png" width="300" height="300">
 
 ### greetings
 Description: A Python Eel greetings application using Python and HTML.
@@ -23,7 +30,7 @@ Description: A Python Eel hello world application using Python and JavaScript.
 
 <img src="https://i.imgur.com/CiCvpXq.png" width="300" height="300">
 
-### hello-world
+### oldschool-runescape-stats
 Description: A Python Eel OSRS hiscores application using Python and JavaScript.
 
 <img src="https://i.imgur.com/5MOGOba.png" width="300" height="300">

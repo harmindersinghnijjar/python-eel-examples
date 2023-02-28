@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Dark/Light Theme Switcher</title>
+    <script src="/eel.js"></script>
+    <script>
+        function setDarkTheme() {
+            document.body.style.color = '#ffffff';
+            document.body.style.backgroundColor = '#333333';
+        }
+
+        function setLightTheme() {
+            document.body.style.color = '#000000';
+            document.body.style.backgroundColor = '#ffffff';
+        }
+
+        function setTheme() {
+            const theme = document.getElementById('theme').value;
+            if (theme === 'dark') {
+                setDarkTheme();
+            } else {
+                setLightTheme();
+            }
+        }
+
+window.onload = function() {
+    setTheme();
+}
+    </script>
+</head>
+<body>
+    <h1>Dark/Light Theme Switcher</h1>
+    <form>
+        <label for="theme">Select a theme:</label>
+        <select id="theme" onchange="setTheme()">
+            <option value="light">Light</option>
+            <option value="dark">Dark</option>
+        </select>
+    </form>
+</body>
+
+</html>
+

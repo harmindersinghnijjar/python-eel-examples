@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Lil Durk Top Songs</title>
+    <script type="text/javascript" src="/eel.js"></script>
+    <script type="text/javascript">
+        function get_lil_durk_songs() {
+            eel.get_lil_durk_songs_py()(function(result) {
+                var songsTable = document.getElementById('songsTable');
+                for (var i = 0; i < result.length; i++) {
+                    var songRow = document.createElement('tr');
+                    // Number each song
+                    var songNumberCell = document.createElement('td');
+                    var songNameCell = document.createElement('td');
+                    var releaseDateCell = document.createElement('td');
+                    songNumberCell.innerHTML = i + 1;
+                    songNameCell.innerHTML = result[i].name;
+                    releaseDateCell.innerHTML = result[i].release_date;
+                    songRow.appendChild(songNumberCell);
+                    songRow.appendChild(songNameCell);
+                    songsTable.appendChild(songRow);
+                }
+            });
+        }
+    </script>
+</head>
+<body onload="get_lil_durk_songs()">
+    <h1>Lil Durk's Top Songs</h1>
+    <table id="songsTable">
+        <tr>
+            <th></th>
+            <th>Song Name</th>
+            <!-- <th>Release Date</th> -->
+        </tr>
+    </table>
+</body>
+</html>

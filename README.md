@@ -13,7 +13,6 @@ Description: A Python Eel application to display current time using Python, HTML
 
 <img src="https://i.imgur.com/Ojh6ZG8.png" width="300" height="300">
 
-
 ### dark-theme
 Description: A Python Eel dark mode application using Python and JavaScript.
 
@@ -29,6 +28,11 @@ Description: A Python Eel greetings application using Python and HTML.
 Description: A Python Eel hello world application using Python and JavaScript.
 
 <img src="https://i.imgur.com/CiCvpXq.png" width="300" height="300">
+
+### iss-location
+Description: A Python Eel application to display the current location of the International Space Station (ISS) using Python and JavaScript.
+
+<img src="https://i.imgur.com/J6MPFdw.png" width="300" height="300">
 
 ### oldschool-runescape-stats
 Description: A Python Eel OSRS hiscores application using Python and JavaScript.

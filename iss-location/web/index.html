@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ISS Tracker</title>
+    <script type="text/javascript" src="/eel.js"></script>
+    <script type="text/javascript">
+        function get_iss_location() {
+            eel.get_iss_location_py()(function(result) {
+                document.getElementById('longitude').innerHTML = result.longitude;
+                document.getElementById('latitude').innerHTML = result.latitude;
+            });
+        }
+    </script>
+</head>
+<body onload="get_iss_location()">
+    <h1>Current Location of the International Space Station</h1>
+    <p>Longitude: <span id="longitude"></span></p>
+    <p>Latitude: <span id="latitude"></span></p>
+</body>
+</html>

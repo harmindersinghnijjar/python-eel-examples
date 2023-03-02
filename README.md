@@ -35,7 +35,7 @@ Description: A Python Eel application to display the current location of the Int
 <img src="https://i.imgur.com/J6MPFdw.png" width="300" height="300">
 
 ### lil-durk-top-songs
-Description: A Python Eel application to display the Lil Durk's top 50 songs using Python and JavaScript.
+Description: A Python Eel application to display Lil Durk's top 50 songs using Python and JavaScript.
 
 <img src="https://i.imgur.com/wVADEv4.png" width="300" height="300">
 
